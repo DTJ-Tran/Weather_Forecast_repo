@@ -5,7 +5,7 @@
 ## About Us & This Project:
   At the time we are posting this project, we are currently student in TROY University major in Computer Science, and this is our final course-works for CS-3360 (Concepts of Object Oriented Programming I), we are propose this product beside to show-case the potential of using Machine Learning technologies in developing the applicative product and task such as Weather Forecast - and the project is purely for educational and referential purpose, so please using this with such awareness.
   
- **We do not responsible for all risks that you caused dues to misused of our result.**
+ **We do not responsible for all risks that due to your misused of our result.**
 ## Technical Requirements:
   Java Language Compiler (At least the 17th version)
   
