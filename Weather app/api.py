@@ -9,14 +9,14 @@ import pandas as pd
 app = Flask(__name__) # The application instance
 
 # Load the trained model
-temp_model = joblib.load('predictors/temperature_predictor.joblib')
-precipitation_model = joblib.load('predictors/precipitation_predictor.joblib')
-wind_model = joblib.load('predictors/wind_predictor.joblib')
-weather_model = joblib.load('predictors/weatherPredictor.joblib')
+temp_model = joblib.load('Weather app/predictors/temperature_predictor.joblib')
+precipitation_model = joblib.load('Weather app/predictors/precipitation_predictor.joblib')
+wind_model = joblib.load('Weather app/predictors/wind_predictor.joblib')
+weather_model = joblib.load('Weather app/predictors/weatherPredictor.joblib')
 
 scaler = MinMaxScaler(feature_range=(0, 1))
 # Define the using dataset 
-path = 'seattle-weather.csv'
+path = 'Weather app/seattle-weather.csv'
 weather_data = pd.read_csv(path)
 weather_data['date'] = pd.to_datetime(weather_data['date'])
 weather_data['wind_speed'] = weather_data['wind']
