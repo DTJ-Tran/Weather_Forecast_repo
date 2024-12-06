@@ -143,10 +143,11 @@ public class Weather {
         List<Float> listOfPreci = this.generatePrecipitation();
         List<WindSpeed> listOfWind = this.generateWindSpeed();
         List<String> listOfWeatherStat = this.genWeatherStatus();
-        int time=LocalTime.now().getHour();
-        for (int iter = time; iter < time+9; iter++) {
-            Weather curWeather = new Weather(listOfMeanTemp.get(iter), listOfPreci.get(iter), listOfWind.get(iter).getSpeed().floatValue(), listOfWeatherStat.get(iter));
-            String hour = String.format("%02d:00", iter);
+        int time = LocalTime.now().getHour();
+        for (int iter = 0; iter < 9; iter++) {
+            int i = (time + iter) % 24; // Wrap values greater than 23 back to 0
+            Weather curWeather = new Weather(listOfMeanTemp.get(i), listOfPreci.get(i), listOfWind.get(i).getSpeed().floatValue(), (String) listOfWeatherStat.get(i));
+            String hour = String.format("%02d:00", i);
             weatherInADay.put(hour, curWeather);
         };
         return weatherInADay;
