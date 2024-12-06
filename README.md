@@ -4,7 +4,7 @@
   By Daves Tran (Dat Tran Tien) & An Nguyen Hai
 ## About Us & This Project:
   At the time we are posting this project, we are currently student in TROY University major in Computer Science, and this is our final course-works for CS-3360 (Concepts of Object Oriented Programming I), we are propose this product beside to show-case the potential of using Machine Learning technologies in developing the applicative product and task such as Weather Forecast - and the project is purely for educational and referential purpose, so please using with such considerable manner.
-## Technical Requirement:
+## Technical Requirements:
   Java Language Compiler (At least the 17th version)
   
   Maven project management Utility (Preferable the 3.9.x Stable Version)
