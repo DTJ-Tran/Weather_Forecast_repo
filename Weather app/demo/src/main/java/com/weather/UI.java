@@ -60,8 +60,8 @@ public class UI extends JFrame {
         setSize(1130, 700);
         setLocationRelativeTo(null);
         setResizable(false);
-        setIconImage(new ImageIcon("demo/src/main/resources/weather-app.png").getImage());
-        loadCustomFont("demo/src/main/resources/font.ttf");
+        setIconImage(new ImageIcon("Weather app/demo/src/main/resources/weather-app.png").getImage());
+        loadCustomFont("Weather app/demo/src/main/resources/font.ttf");
         setInDBName("my_database");
         setInUsrName("root");
         setInPassDB("7294567");
@@ -162,7 +162,7 @@ public class UI extends JFrame {
             }
         });
 
-        JLabel weatherConditionImage = createImageLabel("demo/src/main/resources/cloudy.png", 200, 200, 30,30);
+        JLabel weatherConditionImage = createImageLabel("Weather app/demo/src/main/resources/cloudy.png", 200, 200, 30,30);
         homePanel.add(weatherConditionImage);
 
         JToggleButton tempToggle = createTemperatureToggle(220,50);
@@ -171,14 +171,14 @@ public class UI extends JFrame {
         JLabel weatherConditionLabel = createLabel("Cloudy", 250, 70, 400, 36, 32, SwingConstants.LEFT);
         homePanel.add(weatherConditionLabel);
 
-        JLabel humidityImage = createImageLabel("demo/src/main/resources/humidity.png", 74, 66, 180, 250);
+        JLabel humidityImage = createImageLabel("Weather app/demo/src/main/resources/humidity.png", 74, 66, 180, 250);
         JLabel humidLabel = createLabel("Humidity", 100, 250, 100, 55, 16, SwingConstants.LEFT);
         JLabel humidityLabel = createLabel("80%", 100, 270, 100, 55, 16, SwingConstants.LEFT);
         homePanel.add(humidityImage);
         homePanel.add(humidLabel);
         homePanel.add(humidityLabel);
 
-        JLabel windspeedImage = createImageLabel("demo/src/main/resources/windspeed.png", 74, 66, 410, 250);
+        JLabel windspeedImage = createImageLabel("Weather app/demo/src/main/resources/windspeed.png", 74, 66, 410, 250);
         JLabel windLabel = createLabel("Windspeed", 300, 250, 100, 55, 16, SwingConstants.LEFT);
         JLabel windspeedLabel = createLabel("15 Km/h", 300, 270, 100, 55, 16, SwingConstants.LEFT);
         homePanel.add(windspeedImage);
@@ -240,7 +240,7 @@ public class UI extends JFrame {
         searchPanel.add(searchField);
         
         
-        JButton searchButton = new JButton(loadImage("demo/src/main/resources/search.png", 50, 50));
+        JButton searchButton = new JButton(loadImage("Weather app/demo/src/main/resources/search.png", 50, 50));
         searchButton.setFocusPainted(false);
         searchButton.setContentAreaFilled(false);
         searchButton.setBorderPainted(false);
@@ -284,9 +284,6 @@ public class UI extends JFrame {
 
                             //main(home) panel update
                             hidePanel.setVisible(true);
-                            helpLabel.setText("Loading...");
-
-
                             weatherConditionImage.setIcon(getWeatherIcon(weather.getStatus(), 200, 200));
                             tempToggle.setText(weather.getMeanCelTemp().toString()+"°C");
                             weatherConditionLabel.setText(weather.getStatus());
@@ -401,15 +398,15 @@ public class UI extends JFrame {
     
         String[] columnNames = {"", "", "", "", "", ""};
         Object[][] data = {
-            {"Today", "Sunny", loadImage("demo/src/main/resources/sunny.png", 15, 15), "28°C", "50%", "10 mph"},
-            {"Wed", "Sunny", loadImage("demo/src/main/resources/sunny.png", 15, 15), "26°C", "45%", "12 mph"},
-            {"Thu", "Cloudy", loadImage("demo/src/main/resources/cloudy.png", 15, 15), "31°C", "60%", "14 mph"},
-            {"Fri", "Sunny", loadImage("demo/src/main/resources/sunny.png", 15, 15), "36°C", "40%", "9 mph"},
-            {"Sat", "Cloudy", loadImage("demo/src/main/resources/cloudy.png", 15, 15), "31°C", "55%", "13 mph"},
-            {"Sun", "Snow", loadImage("demo/src/main/resources/snow.png", 15, 15), "11°C", "85%", "20 mph"},
-            {"Mon", "Sunny", loadImage("demo/src/main/resources/sunny.png", 15, 15), "12°C", "50%", "10 mph"},
-            {"Tue", "Sunny", loadImage("demo/src/main/resources/sunny.png", 15, 15), "13°C", "50%", "10 mph"},
-            {"Wed", "Sunny", loadImage("demo/src/main/resources/sunny.png", 15, 15), "14°C", "50%", "10 mph"}
+            {"Today", "Sunny", loadImage("Weather app/demo/src/main/resources/sunny.png", 15, 15), "28°C", "50%", "10 mph"},
+            {"Wed", "Sunny", loadImage("Weather app/demo/src/main/resources/sunny.png", 15, 15), "26°C", "45%", "12 mph"},
+            {"Thu", "Cloudy", loadImage("Weather app/demo/src/main/resources/cloudy.png", 15, 15), "31°C", "60%", "14 mph"},
+            {"Fri", "Sunny", loadImage("Weather app/demo/src/main/resources/sunny.png", 15, 15), "36°C", "40%", "9 mph"},
+            {"Sat", "Cloudy", loadImage("Weather app/demo/src/main/resources/cloudy.png", 15, 15), "31°C", "55%", "13 mph"},
+            {"Sun", "Snow", loadImage("Weather app/demo/src/main/resources/snow.png", 15, 15), "11°C", "85%", "20 mph"},
+            {"Mon", "Sunny", loadImage("Weather app/demo/src/main/resources/sunny.png", 15, 15), "12°C", "50%", "10 mph"},
+            {"Tue", "Sunny", loadImage("Weather app/demo/src/main/resources/sunny.png", 15, 15), "13°C", "50%", "10 mph"},
+            {"Wed", "Sunny", loadImage("Weather app/demo/src/main/resources/sunny.png", 15, 15), "14°C", "50%", "10 mph"}
             
         };
     
@@ -558,17 +555,17 @@ public class UI extends JFrame {
     
     public ImageIcon getWeatherIcon(String condition,int height,int width) {
         if (condition.contains("Sun")) {
-            return loadImage("demo/src/main/resources/sunny.png", width, height);
+            return loadImage("Weather app/demo/src/main/resources/sunny.png", width, height);
         } else if (condition.contains("Rain")||condition.contains("rain")) {
-            return loadImage("demo/src/main/resources/rain.png", width, height);
+            return loadImage("Weather app/demo/src/main/resources/rain.png", width, height);
         } else if (condition.contains("Fog")||condition.contains("Mist")) {
-            return loadImage("demo/src/main/resources/fog.png", width, height);
+            return loadImage("Weather app/demo/src/main/resources/fog.png", width, height);
         } else if (condition.contains("Drizzle")||condition.contains("drizzle")) {
-            return loadImage("demo/src/main/resources/drizzle.png", width, height);
+            return loadImage("Weather app/demo/src/main/resources/drizzle.png", width, height);
         } else if (condition.contains("Snow")||condition.contains("snow")) {
-            return loadImage("demo/src/main/resources/snow.png", width, height);
+            return loadImage("Weather app/demo/src/main/resources/snow.png", width, height);
         } else {
-           return loadImage("demo/src/main/resources/cloudy.png", width, height);
+           return loadImage("Weather app/demo/src/main/resources/cloudy.png", width, height);
         }
 }
 
