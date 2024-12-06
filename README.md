@@ -6,10 +6,15 @@
   At the time we are posting this project, we are currently student in TROY University major in Computer Science, and this is our final course-works of CS-3360 (Concepts of Object Oriented Programming I), we are propose this product beside to show-case the potential of using Machine Learning technologies in developing the applicative product and task such as Weather Forecast - and the project is purely for educational and referential purpose, so please using with such considerable manner.
 ## Technical Requirement:
   Java Language Compiler (At least the 17th version)
+  
   Maven project management Utility (Preferable the 3.9.x Stable Version)
+  
   Python Compiler (At least 3.11.5 or later) & Tensor-flow (2.12.0)
+  
   Jupyter-Notebook (or Google Collab Notebook is usable for the back-end)
+  
   MySQL(Ver 14.14)
+  
   Other you can check our import & the pom.xml to learn more
 ## External Reference:
   Our project do use the Dataset from **ANANTH R** from Kaggle for training the Weather Predictor LSTM model 
