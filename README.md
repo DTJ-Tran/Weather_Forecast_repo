@@ -15,7 +15,7 @@
   
   MySQL(Ver 14.14)
   
-  Other you can check our import & the pom.xml to learn more
+  Other Frameworks you can check our import & the pom.xml to learn more
 ## External Reference:
   Our project do use the Dataset from **ANANTH R** from Kaggle for training the Weather Predictor LSTM model 
   Link to Original Source: **https://www.kaggle.com/datasets/ananthr1/weather-prediction/data**
