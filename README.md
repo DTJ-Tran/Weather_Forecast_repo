@@ -20,7 +20,7 @@
   Our project do use the Dataset from **ANANTH R** from Kaggle for training the Weather Predictor LSTM model 
   Link to Original Source: **https://www.kaggle.com/datasets/ananthr1/weather-prediction/data**
 ## Compatibility:
-  Able to Use both on Mac-OS and Windows
+  Able to be deployed both on Mac-OS and Windows
 ## Citation:
 **We do really appreaciate if you using our code for educational and referential purpose, but please provide the citation for the author's credit (You can follow our suggestion in the CITATION.cff)**
 ## Contact:
