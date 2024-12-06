@@ -3,9 +3,8 @@
 ## Authors: 
   By Daves Tran (Dat Tran Tien) & An Nguyen Hai
 ## About Us & This Project:
-  At the time we are posting this project, we are currently student in TROY University major in Computer Science, and this is our final course-works for CS-3360 (Concepts of Object Oriented Programming I), we are propose this product beside to show-case the potential of using Machine Learning technologies in developing the applicative product and task such as Weather Forecast - and the project is purely for educational and referential purpose, so please using this with such awareness.
-  
- **We do not responsible for all risks that due to your misused of our result.**
+ At the time of posting this project, we are students at TROY University, majoring in Computer Science. This project serves as our final coursework for CS-3360 (Concepts of Object-Oriented Programming I). We present this product to showcase the potential of using Machine Learning technologies in developing practical applications, such as weather forecasting. Please note that this project is intended solely for educational and reference purposes. We encourage users to proceed with this in mind.
+**We are not responsible for any risks or damages arising from the misuse of our results.**
 ## Technical Requirements:
   Java Language Compiler (At least the 17th version)
   
