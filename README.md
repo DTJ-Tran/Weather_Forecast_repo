@@ -23,7 +23,12 @@
   Able to be deployed both on Mac-OS and Windows
 ## Citation:
 **We do really appreaciate if you using our code for educational and referential purpose, but please provide the citation for the author's credit (You can follow our suggestion in the CITATION.cff)**
+## Contribution:
+  An Nguyen - Building the UI.java class
+  
+  Dat Tran (Daves) - Building the Back-end elemnent and construct the LSTM predictor model
+
 ## Contact:
-  Daves: trantiendat083@gmail.com
+  Daves: trantiendat083@gmail.com 
   
   An: haiann663@gmail.com
