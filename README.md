@@ -26,7 +26,7 @@
 ## Contribution:
   An Nguyen - Building the UI.java class
   
-  Dat Tran (Daves) - Building the Back-end elemnent and construct the LSTM predictor model
+  Dat Tran (Daves) - Building the Back-end elemnents and construct the LSTM predictor model
 
 ## Contact:
   Daves: trantiendat083@gmail.com 
